@@ -10,7 +10,7 @@ import cn.hutool.log.level.WarnLog;
 
 /**
  * 日志统一接口
- * 
+ * @date 2020年8月8日
  * @author Looly
  *
  */
@@ -35,6 +35,7 @@ public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 	 * @since 5.0.0
 	 */
 	static Log get(String name) {
+		System.out.println(name);
 		return LogFactory.get(name);
 	}
 
